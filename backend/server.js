@@ -17,8 +17,8 @@ app.use(express.json()); // Pour comprendre le JSON entrant
 
 app.use(cors({
     origin: [
-        "http://localhost:3000", // Votre frontend local React
-        "https://votre-site-deploye.onrender.com" // Votre frontend production
+        "http://localhost:3000",                     // Pour tes tests locaux
+        "https://final-project-cloudgaming.onrender.com" // 👈 TA VRAIE URL FRONTEND
     ],
     credentials: true
 }));
