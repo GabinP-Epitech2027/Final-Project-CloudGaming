@@ -1,6 +1,6 @@
 export const translations = {
   fr: {
-    title: "Arcade Unity",
+    title: "Projet Final",
     welcome: "Bienvenue",
     guest: "Mode Invité",
     play: "JOUER",
@@ -17,7 +17,7 @@ export const translations = {
     subTitle: "Gagne des points et domine le classement !",
   },
   en: {
-    title: "Unity Arcade",
+    title: "Final Project",
     welcome: "Welcome",
     guest: "Guest Mode",
     play: "PLAY",
@@ -34,7 +34,7 @@ export const translations = {
     subTitle: "Earn points and rule the leaderboard!",
   },
   es: {
-    title: "Arcade Unity",
+    title: "Proyecto Final",
     welcome: "Bienvenido",
     guest: "Modo Invitado",
     play: "JUGAR",
