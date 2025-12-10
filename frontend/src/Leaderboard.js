@@ -7,7 +7,7 @@ function Leaderboard({ gameId, refreshTrigger }) {
     const { t } = useLanguage(); // <--- Hook de traduction
 
     useEffect(() => {
-        axios.get(`http://localhost:5001/api/scores/${gameId}`)
+        axios.get(`https://final-project-cloudgaming-backend.onrender.com:5001/api/scores/${gameId}`)
             .then(res => setScores(res.data))
             .catch(err => console.error("Erreur chargement leaderboard:", err));
     }, [gameId, refreshTrigger]);
