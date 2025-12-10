@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 // Import des Routes
-const authRoute = require('./routes/Auth');
+const authRoute = require('./routes/auth');
 const scoreRoute = require('./routes/scores');
 
 // Utilisation des Routes
