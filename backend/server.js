@@ -14,7 +14,14 @@ mongoose.connect(process.env.DB_CONNECT)
 
 // Middlewares
 app.use(express.json()); // Pour comprendre le JSON entrant
-app.use(cors()); // Pour autoriser le Frontend
+
+app.use(cors({
+    origin: [
+        "http://localhost:3000", // Votre frontend local React
+        "https://votre-site-deploye.onrender.com" // Votre frontend production
+    ],
+    credentials: true
+}));
 
 app.use((req, res, next) => {
     console.log(`📡 Requête reçue : ${req.method} ${req.url}`);

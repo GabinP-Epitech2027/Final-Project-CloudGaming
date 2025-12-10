@@ -19,7 +19,7 @@ const GamePlayer = ({ gameId, gameDisplayName, gameFolder }) => {
   const handleGameOver = useCallback((score) => {
     // ... Logique inchangée ...
     const token = localStorage.getItem('auth-token');
-    axios.post('https://final-project-cloudgaming-backend.onrender.com:5001/api/scores', {
+    axios.post('https://final-project-cloudgaming-backend.onrender.com/api/scores', {
         gameId: gameId, 
         scoreValue: score
     }, {
